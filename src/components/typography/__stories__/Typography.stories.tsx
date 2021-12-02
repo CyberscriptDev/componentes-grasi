@@ -1,10 +1,9 @@
 import React from "react";
 import { ComponentStory, Meta } from "@storybook/react";
 import { Heading1, Heading2, Heading3, Heading4, Heading5, Heading6, Body, Caption, Label } from "../Typography.styles";
-import { basePath } from "../../../../.storybook/preview";
 
 export default {
-  title: `${basePath}/Typography`,
+  title: "Components/Atoms/Typography",
   argTypes: {
     color: {
       options: [
@@ -77,7 +76,7 @@ export default {
       },
     },
   },
-} as Meta;
+};
 
 export const Title1: ComponentStory<typeof Heading1> = (args) => 
   <Heading1 {...args}>Hello, Heading1</Heading1>

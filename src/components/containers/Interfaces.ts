@@ -1,5 +1,5 @@
 export interface IContainer {
-  margin?: string;
+  verticalMargin?: string;
   padding?: string;
   gap?: string;
 }

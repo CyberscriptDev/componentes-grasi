@@ -4,7 +4,7 @@ import { ICard, IContainer, IMain, IRow } from "./Interfaces";
 export const Main = styled.main<IMain>`
   display: flex;
   flex-direction: column;
-  margin: ${({ margin = "lg" }) => `var(--margin-${margin})`} auto;
+  margin: ${({ verticalMargin = "lg" }) => `var(--margin-${verticalMargin})`} auto;
   gap: ${({ gap = "lg" }) => `var(--gap-${gap})`};
   max-width: ${({ maxWidth = 1120 }) => `${maxWidth}px`};
   padding: ${({ padding = "lg" }) => `var(--padding-${padding})`};
@@ -13,8 +13,8 @@ export const Main = styled.main<IMain>`
 export const Grid = styled.section<IContainer>`
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: ${({ gap = "lg" }) => `var(--gap-${gap})`};
-  margin: ${({ margin = "lg" }) => `var(--margin-${margin})`} 0;
+  gap: ${({ gap = "md" }) => `var(--gap-${gap})`};
+  margin: ${({ verticalMargin = "md" }) => `var(--margin-${verticalMargin})`} 0;
 
   @media (min-width: 720px) {
     grid-template-columns: repeat(2, 1fr);

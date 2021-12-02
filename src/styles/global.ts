@@ -319,6 +319,7 @@ export const GlobalStyle = createGlobalStyle`
     --margin-xlg: 1.2rem;
 
     //paddings
+    --margin-none: 0;
     --padding-xs: .2rem;
     --padding-sm: .4rem;
     --padding-md: .8rem;
@@ -326,11 +327,12 @@ export const GlobalStyle = createGlobalStyle`
     --padding-xlg: 1.2rem;
 
     //gap
+    --gap-none: 0;
     --gap-xs: .2rem;
     --gap-sm: .4rem;
     --gap-md: .8rem;
-    --gap-lg: 1rem;
-    --gap-xlg: 1.2rem;
+    --gap-lg: 1.6rem;
+    --gap-xlg: 3.2rem;
 
     //justify content
     --justify-start: start;

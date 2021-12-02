@@ -19,5 +19,3 @@ export const parameters = {
     },
   },
 };
-
-export const basePath = "Components/Atoms";
